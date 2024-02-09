@@ -3,24 +3,24 @@ import LogoDark from '../assets/images/logo-dark.svg';
 import LogoLight from '../assets/images/logo-light.svg'; 
 import ConnectWalletButton from "../components/ConnectWalletButton"; 
 import { Link, NavLink } from 'react-router-dom';
-import themecoloriconWhite from '../assets/images/theme-color-icon.svg';
-import themecoloriconBlack from '../assets/images/theme-color-icon-black.svg';
+import ThemeSwitchLight from '../assets/images/theme-switch-light.svg';
+import ThemeSwitchDark from '../assets/images/theme-switch-dark.svg';
 import  useLocalStorage  from 'localstorage-react';
 
 function Header() {
     const [theme, setTheme] = useLocalStorage('zeta_domains_theme');
-
+     
     React.useEffect(()=> {
         var bodytag = document.getElementsByTagName("body");
         if(theme === "darkTheme") { 
-            bodytag[0].classList.remove('whiteTheme');
-            bodytag[0].classList.add("darkTheme");
-        } else if(theme === "whiteTheme") {
+            bodytag[0].classList.remove('lightTheme');
+            bodytag[0].classList.add("darkTheme"); 
+        } else if(theme === "lightTheme") {
             bodytag[0].classList.remove('darkTheme');
-            bodytag[0].classList.add("whiteTheme");
+            bodytag[0].classList.add("lightTheme"); 
         } else {
             bodytag[0].classList.remove('darkTheme');
-            bodytag[0].classList.add("whiteTheme");
+            bodytag[0].classList.add("lightTheme"); 
         }
     }, []);
 
@@ -31,16 +31,16 @@ function Header() {
 
         if(theme === "darkTheme") {
             bodytag[0].classList.remove('darkTheme');
-            themeicon[0].classList.remove('active');
-            setTheme("whiteTheme");
-        } else if(theme === "whiteTheme") {
+            bodytag[0].classList.add('lightTheme');
+            setTheme("lightTheme");
+        } else if(theme === "lightTheme") {
+            bodytag[0].classList.remove('lightTheme');
             bodytag[0].classList.add('darkTheme');
-            themeicon[0].classList.add('active');
             setTheme("darkTheme");
         } else {
             bodytag[0].classList.remove('darkTheme');
-            themeicon[0].classList.remove('active');
-            setTheme("whiteTheme");
+            bodytag[0].classList.add('lightTheme');
+            setTheme("lightTheme");
         } 
     }
 
@@ -85,8 +85,7 @@ function Header() {
                         <li><Link onClick={(e) => closeMobileMenu(e)} to="/account">My Domains</Link></li>
                         <li>
                             <a className="changeTheme" onClick={(e) => toogleTheme(e)}>
-                                <img className="moonwhite" src={themecoloriconWhite} />
-                                <img className="moonblack"  src={themecoloriconBlack} />
+                                <img className="" src={theme == "darkTheme" ? ThemeSwitchDark : ThemeSwitchLight } /> 
                             </a>
                         </li>
                     </ul>

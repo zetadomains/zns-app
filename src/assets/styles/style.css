@@ -5830,7 +5830,7 @@ header .container-xxl > div nav ul li a {
 header nav ul li a img{
     width: 40px;
 }
-header nav ul li a.changeTheme{border-radius: 4px;border: 1px solid #000;display: flex;align-items: center;justify-content: center;cursor: pointer;}
+header nav ul li a.changeTheme {border-radius: 4px; display: flex;align-items: center;justify-content: center;cursor: pointer;}
 header nav ul li a img.moonwhite{display: none;}
 header nav ul li a img.moonblack{display: block;}
 
@@ -5838,10 +5838,17 @@ header nav ul li a img.moonblack{display: block;}
 .darkTheme  nav ul li a img.moonwhite{display: block;}
 .darkTheme  nav ul li a img.moonblack{display: none;}
 
+.lightTheme  nav ul li {border-color: #000 !important;}
+.lightTheme  nav ul li a img.moonwhite{display: block;}
+.lightTheme  nav ul li a img.moonblack{display: none;}
+
 @media (max-width: 768px) {
     header nav{padding: 0;}
     .darkTheme  nav ul li a img.moonwhite{display: none;}
     .darkTheme  nav ul li a img.moonblack{display: block;}
+
+    .lightTheme  nav ul li a img.moonwhite{display: none;}
+    .lightTheme  nav ul li a img.moonblack{display: block;}
     
     header .container-fluid > div nav ul li a,
     header .container-lg > div nav ul li a,
@@ -5946,16 +5953,24 @@ header .mm.active span:last-child {
 @media (max-width: 768px) {
     header{position: relative;}
     header  nav{background-color: #000;padding: 10px 0;}
-    .darkTheme header  nav{background-color: #fff;padding: 10px 0;}
-    .darkTheme header nav{background-color: #000;}
-    header nav ul li a.changeTheme{width: 40px;margin: 0 auto;background-color: #fff !important;}
+    
+    .darkTheme header nav {background-color: #000;padding: 10px 0;}
+    .lightTheme header nav {background-color: #fff;padding: 10px 0;}
+    
+
+    header nav ul li a.changeTheme{width: 40px;margin: 0 auto;  }
     header nav ul li{padding: 10px 5px !important;}
     header nav ul li a{padding: 0 !important;color:#fff !important;}
     header nav ul li {border-bottom: 1px solid #fff !important;}
+
     .darkTheme  nav ul li {border-bottom: 1px solid #000 !important;}
+    .lightTheme  nav ul li {border-bottom: 1px solid #fff !important;}
+
     header nav ul li:last-child{border: none !important;padding-bottom: 0 !important;}
     header nav ul li {border-bottom: 1px solid #000;;}
+
     .darkTheme header nav ul li {border-bottom: 1px solid #fff;;}
+    .lightTheme header nav ul li {border-bottom: 1px solid #000;;}
     
   
     body.menuOn header{z-index: 8888;}
@@ -6020,9 +6035,12 @@ header .mm.active span:last-child {
 }
 @media(max-width:768px){
     .wallet-connect img{width: 20px;}
-    .darkTheme  nav{background-color:  #fff !important; }
+    .darkTheme  nav { background-color:  #000 !important;   }
+    .lightTheme  nav { background-color:  #fff !important;   }
     .darkTheme  nav ul li {border-right: none !important;}
-    .darkTheme  nav ul li  a{color:#000 !important}
+    .lightTheme  nav ul li {border-right: none !important;}
+    .darkTheme  nav ul li  a { color:#fff !important}
+    .lightTheme  nav ul li  a { color:#000 !important}
 }
 .wallet-connect:hover {
     box-shadow: 0 1px 16px 0 #005741;
@@ -6176,6 +6194,7 @@ main section .banner-bg {
 }
 .centercontent h3{color:#000 !important;}
 .darkTheme .centercontent h3{color:#fff !important;}
+.lightTheme .centercontent h3{color:#000 !important;}
 .search-content form {
     width: 100%;
     height: 60px;
