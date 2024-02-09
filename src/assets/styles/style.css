@@ -382,7 +382,7 @@ select {
 select {
     word-wrap: normal;
     width: 140px;
-    color: #005741;
+    color: #018063;
     background: #fff url(../images/arrow-down.svg) no-repeat 90%;
     border: none;
     background-size: 16px;
@@ -5411,7 +5411,7 @@ progress {
     font-style: normal;
 }
 .color-red {
-    color: #005741 !important;
+    color: #018063 !important;
 }
 .color-white {
     color: #fff !important;
@@ -5667,7 +5667,7 @@ li {
     transition: background-color 0.3s ease-in-out;
 }
 .dropdown-toggle:hover .tripledot em {
-    background-color: #005741;
+    background-color: #018063;
 }
 .dropdown-menu {
     border: 1px solid #fff;
@@ -5756,7 +5756,7 @@ header h1 span{
     }
     header .wallet-connect{margin-right: 10px;min-width: 165px;font-size: 14px !important;height: 40px;letter-spacing: -1px;}
     header .wallet-connect img{}
-    header h1 img{max-width: 55px;}
+    header h1 img{max-width: 70px;}
 }
 header .container-fluid > div,
 header .container-lg > div,
@@ -5786,7 +5786,7 @@ header .container-md > div a:hover,
 header .container-sm > div a:hover,
 header .container-xl > div a:hover,
 header .container-xxl > div a:hover {
-    color: #005741 !important;
+    color: #018063 !important;
 }
 header .container-fluid > div nav,
 header .container-lg > div nav,
@@ -6043,7 +6043,7 @@ header .mm.active span:last-child {
     .lightTheme  nav ul li  a { color:#000 !important}
 }
 .wallet-connect:hover {
-    box-shadow: 0 1px 16px 0 #005741;
+    box-shadow: 0 1px 16px 0 #018063;
 }
 .wallet-connect:hover img {
     animation-name: shake;
@@ -6104,7 +6104,7 @@ footer .footNav ul li a {
     transition: 0.3s;
 }
 footer .footNav ul li a:hover {
-    color: #005741 !important;
+    color: #018063 !important;
 }
 footer .footNav ul li::before {
     position: absolute;
@@ -6156,7 +6156,7 @@ main section .banner h2 {
     margin-bottom: 35px;
 }
 main section .banner h2 span {
-    color: #005741;
+    color: #018063;
     font-weight: 700;
 }
 @media (max-width: 768px) {
@@ -6211,30 +6211,30 @@ main section .banner-bg {
 }
 @media (max-width: 768px) {
     .search-content form input {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 .search-content form select {
     text-indent: 4px;
 }
 .search-content form button {
-    background-color: #005741;
+    background-color: #018063;
     color: #fff;
     width: 150px;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: 700;
     height: 100%;
     border-radius: 0;
     transition: 0.3s;
-    border: 1px solid #005741;
+    border: 1px solid #018063;
 }
 .search-content form button:hover {
     background-color: #fff;
-    color: #005741;
+    color: #018063;
 }
 @media (max-width: 768px) {
     .search-content form button {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 }
 .search-content form img {
@@ -6346,7 +6346,7 @@ main section .banner-bg {
     border-radius: 4px;
     width: 100%;
     transition: 0.2s;
-    background: #005741;
+    background: #018063;
 }
 .preloader .countdown,
 .preloader p {
@@ -6450,7 +6450,7 @@ button.save:hover {
 }
 button.cancel {
     color: #fff;
-    background: #005741;
+    background: #018063;
 }
 .tab-content {
     width: 100%;
@@ -6508,7 +6508,7 @@ header nav ul {
 }
 .accordion-header button {
     background-color: #fff !important;
-    color: #005741 !important;
+    color: #018063 !important;
     outline-color: transparent !important;
     outline: none !important;
     border: none !important;
@@ -6527,7 +6527,7 @@ ul {
     color: #24BD11;
 }
 .color-red {
-    color: #005741;
+    color: #018063;
 }
 .wrongAlert {
     transition: 0.4s;
@@ -6641,14 +6641,14 @@ ul {
 
 .nav-link.active,
 .nav-link:hover {
-    color: #005741 !important;
+    color: #018063 !important;
     border: none !important;
 }
 #ethscan {
-    background-color: #005741;
+    background-color: #018063;
 }
 .imgwhiteredbg {
-    background-color: #005741;
+    background-color: #018063;
     display: block;
     display: flex;
     justify-content: center;
@@ -6672,8 +6672,8 @@ ul {
         color: #000;
     }
     50% {
-        color: #005741;
-        box-shadow: 0 1px 16px 0 #005741;
+        color: #018063;
+        box-shadow: 0 1px 16px 0 #018063;
     }
     100% {
         color: #000;
@@ -6685,7 +6685,7 @@ ul {
 .text-content h3{font-size: 28px;}
 .text-content *{color:#000;}
 .text-content p a{transition: .4s;}
-.text-content p a:hover{color:#005741 !important;}
+.text-content p a:hover{color:#018063 !important;}
 .text-content p,.text-content ul li{font-family: 'Arial';font-size: 18px;}
 .text-content ul li{position: relative;padding-left: 15px;}
 .text-content ul li::before{display: block;content:"";width: 6px;height: 6px;border-radius: 50%;background-color: #fff;position: absolute;top:9px; left:0;content:"";}
@@ -6719,7 +6719,7 @@ ul {
 .customCounter button::after{display: block;width: 60%;content:"";height: 2px;background-color: #000;position: absolute;transition: .4s;}
 .customCounter button.countplus::before{display: block;height: 60%;width: 2px;background-color: #000;content:"";position: absolute;transition: .4s;}
 
-.customCounter .countminus:hover::before,.customCounter .countminus:hover{background-color: #005741;color:#fff;border-color: #fff;}
+.customCounter .countminus:hover::before,.customCounter .countminus:hover{background-color: #018063;color:#fff;border-color: #fff;}
 .customCounter .countplus:hover{background: #20c997;color:#fff;border-color: #fff;}
 .customCounter button:hover::after,.customCounter button:hover::before{background-color: #fff;}
 .customCounter div{height: 30px;margin: 0 15px;display: flex;justify-content: center;align-items: center;border-radius: 4px;border:1px solid #000;padding: 7px;background-color: #fff;font-size: 20px;color:#000;}
@@ -6742,7 +6742,7 @@ button{border-width: 1px;font-family:rbtm, Arial, Helvetica, sans-serif !importa
     background: transparent;        /* color of the tracking area */
   }
   .tableContent::-webkit-scrollbar-thumb {
-    background-color: #005741;    /* color of the scroll thumb */
+    background-color: #018063;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid transparent;  /* creates padding around scroll thumb */
   }
