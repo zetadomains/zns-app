@@ -1,7 +1,8 @@
 import searchIcon from '../assets/images/search-icon.svg';
 import loadericon from '../assets/images/loader-icon.svg';
 import zetaRegisterControllerABI from '../abi/ZetaRegisterController.json'
-import { goerli, zetaChain } from 'wagmi/chains'
+import { goerli } from 'wagmi/chains'
+import { zetaChain } from '../zetaChain';
 
 import { useReadContract } from 'wagmi'
 import { useRef, useState } from 'react';

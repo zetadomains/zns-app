@@ -13,7 +13,8 @@ import { GET_DOMAIN } from "../graphql/Domain";
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { getDateSimple, getExpires, getLabelHash, getNameHash, getOneYearDuration, getTimeAgo, getTokenId, obscureLabel, obscureName } from "../helpers/String";
 import { getBalance } from '@wagmi/core'
-import { goerli, zetaChain } from 'wagmi/chains'
+import { goerli } from 'wagmi/chains'
+import { zetaChain } from "../zetaChain";
 
 class Register extends Component {
      

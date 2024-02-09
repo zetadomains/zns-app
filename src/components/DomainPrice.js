@@ -3,7 +3,8 @@ import loadericon from '../assets/images/loader-icon.svg';
 import { useReadContract } from 'wagmi'
 import { toast } from 'react-toastify'; 
 import { fromWei } from '../helpers/String';
-import { goerli, zetaChain } from 'wagmi/chains'
+import { goerli } from 'wagmi/chains'
+import { zetaChain } from '../zetaChain';
 
 function DomainPrice({available, name, duration}) { 
  

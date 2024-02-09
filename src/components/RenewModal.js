@@ -10,7 +10,8 @@ import { Modal } from "react-bootstrap";
 import {  } from "@apollo/client";
 import { getExpires, getTimeAgo, obscureName } from "../helpers/String";
 import { getBalance } from '@wagmi/core'
-import { goerli, zetaChain } from 'wagmi/chains'
+import { goerli } from 'wagmi/chains'
+import { zetaChain } from "../zetaChain";
 
 class RenewModal extends Component {
 
