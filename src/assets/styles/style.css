@@ -5724,24 +5724,25 @@ header {
     background-color: #fff;
 }
 header > div > a{text-decoration: none;}
-header h1 {
-    max-width: 130px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-   ;
-}
+ 
+
 header h1 img {
-    width: 81px;
-    display: block;
-    margin-top: 4px;
-   
+ 
 }
-header h1 span{
+
+header div a {
+    width: 100%;
+}
+ 
+header div a h1 span {
+    font-size: 22px !important;
+    color:black;
+    margin-left: -10px;
+}
+
+header h1 span {
     color:#000;
-    text-decoration: none;
-    font-size: 16px;
-    margin-top: 3px;
+    text-decoration: none; 
 }
 .dropdown > div {
     padding: 0;
@@ -5756,7 +5757,7 @@ header h1 span{
     }
     header .wallet-connect{margin-right: 10px;min-width: 165px;font-size: 14px !important;height: 40px;letter-spacing: -1px;}
     header .wallet-connect img{}
-    header h1 img{max-width: 70px;}
+    header h1 img{max-width: 80px;}
 }
 header .container-fluid > div,
 header .container-lg > div,

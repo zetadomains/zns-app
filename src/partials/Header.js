@@ -74,9 +74,9 @@ function Header() {
         <header>
             <div className="container-fluid d-flex align-items-center justify-content-between">
             <NavLink to="/">
-                <h1 id="logo">
-                        <img src={theme === "darkTheme"? LogoLight: LogoDark} alt="Zeta Name Services" />
-                        <span>Zeta Domains</span>
+                <h1 id="logo" className="d-flex flex-item-column align-items-center">
+                    <img width={64} src={theme === "darkTheme"? LogoLight : LogoDark} alt="Zeta Name Service" /> 
+                    <span>Zeta Domains</span>
                 </h1>
             </NavLink>
             <div className="controls-content">
