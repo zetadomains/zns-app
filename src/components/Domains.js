@@ -160,6 +160,10 @@ class Domain extends Component {
                             <tr>
                                 <td>Registered</td>
                                 <td>{getTimeAgo(this.state.domain.registeredAt)} - { getDateSimple(this.state.domain.registeredAt) } </td>
+                            </tr> 
+                            <tr>
+                                <td>Resolver</td>
+                                <td>{process.env.REACT_APP_PUBLICRESOLVER} </td>
                             </tr>
                         </tbody>
                     </table>
