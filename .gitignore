@@ -11,6 +11,9 @@ lerna-debug.log*
 build/*
 build_temp/*
 
+# Confs
+*.conf
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
