@@ -3,7 +3,7 @@ import loadericon from '../assets/images/loader-icon.svg';
 import { useReadContract } from 'wagmi'
 import { toast } from 'react-toastify'; 
 import { fromWei } from '../helpers/String';
-import { goerli } from 'wagmi/chains'
+import { goerli, zetachainAthensTestnet } from 'wagmi/chains'
 import { zetaChain } from '../zetaChain';
 
 function DomainPrice({available, name, duration}) { 
@@ -17,7 +17,7 @@ function DomainPrice({available, name, duration}) {
         ...zetaRegisterControllerConfig,
         functionName: 'rentPrice',
         args: [name, duration],
-        chainId: process.env.REACT_APP_NODE_ENV === "production" ? zetaChain.id: goerli.id
+        chainId: process.env.REACT_APP_NODE_ENV === "production" ? zetaChain.id: zetachainAthensTestnet.id
     });
   
     if(error) toast.error(error.message)

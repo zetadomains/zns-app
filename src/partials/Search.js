@@ -1,7 +1,7 @@
 import searchIcon from '../assets/images/search-icon.svg';
 import loadericon from '../assets/images/loader-icon.svg';
 import zetaRegisterControllerABI from '../abi/ZetaRegisterController.json'
-import { goerli } from 'wagmi/chains'
+import { goerli, zetachainAthensTestnet } from 'wagmi/chains'
 import { zetaChain } from '../zetaChain';
 
 import { useReadContract } from 'wagmi'
@@ -45,7 +45,7 @@ function Search() {
         ...zetaRegisterControllerConfig,
         functionName: 'available',
         args: [name],
-        chainId: process.env.REACT_APP_NODE_ENV === "production" ? zetaChain.id: goerli.id
+        chainId: process.env.REACT_APP_NODE_ENV === "production" ? zetaChain.id: zetachainAthensTestnet.id
     });
  
     if(error) toast.error(error.message)

@@ -1,6 +1,6 @@
 import { zetaChain } from "./zetaChain";
 import { http, createConfig } from 'wagmi'
-import { mainnet, goerli } from 'wagmi/chains'
+import { mainnet, goerli, zetachainAthensTestnet } from 'wagmi/chains'
 import { walletConnect, injected, coinbaseWallet } from 'wagmi/connectors'
 import { ApolloClient, InMemoryCache } from "@apollo/client"; 
 
@@ -11,13 +11,14 @@ export const metadata = {
   description: ''
 }
 
-export const chains = [mainnet, goerli, zetaChain];
+export const chains = [mainnet, goerli, zetaChain, zetachainAthensTestnet];
 
 export const wagmiConfig = createConfig({
     chains: chains,
     transports: { 
       [mainnet.id]: http(),
       [goerli.id]: http("https://eth-goerli.g.alchemy.com/v2/"+ process.env.REACT_APP_ALCHEMY_KEY),
+      [zetachainAthensTestnet.id]: http(),
       [zetaChain.id]: http(),
     },
     connectors: [
